@@ -1,0 +1,46 @@
+ 
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        
+        System.out.println("1.Addition");
+        System.out.println("2.Substract");
+        System.out.println("3.Multiplication");
+        System.out.println("4.Divison");
+        System.out.println("5.Remainder");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the first number:");
+        int fn=sc.nextInt();
+        System.out.println("Enter the second number:");
+        int sn=sc.nextInt();
+        System.out.println("Enter the number what you performed.");
+        int cn=sc.nextInt();
+        int res=0;
+        if (int cn==1) {
+            
+            res=fn+sn;
+            System.out.println(res);
+        }
+        else if(int cn == 2) {
+            
+            res=fn-sn;
+            System.out.println(res);
+        }
+         else if (int cn == 3){
+            
+            res=fn*sn;
+            System.out.println(res);
+        }
+        
+         else if(int cn == 4) {
+            
+            res=fn/sn;
+            System.out.println(res);
+        }
+         else if(int cn==5){
+            
+            res=fn%sn;
+            System.out.println(res);
+        }
+}
